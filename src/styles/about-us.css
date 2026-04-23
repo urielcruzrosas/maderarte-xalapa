@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* TITULO */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ICONOS DERECHA */
+.icons {
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+}
+
+.icons span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* SECCION PRINCIPAL */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* IMAGEN GRANDE */
+.image-box {
+    width: 40%;
+    height: 250px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+/* TEXTO DERECHA */
+.text-box {
+    width: 50%;
+}
+
+.text-box h2 {
+    margin-bottom: 10px;
+}
+
+/* SECCION INFERIOR */
+.about {
+    text-align: center;
+    margin-top: 50px;
+}
