@@ -1,0 +1,17 @@
+.bg-color-base {
+    background-color: #D8C59D; /* El color rosado claro de tu imagen */
+}
+
+.fuente-personalizada {
+    font-family: 'Arial', serif;
+}
+
+.bg-color-secondary {
+    background-color: #C9A66B; /* El color marrón claro de tu imagen */
+}
+
+.mi-boton-personalizado {
+    background-color: #tu-color-hex;
+    border: none;
+    border-radius: 8px; /* Si quieres bordes redondeados */
+}
