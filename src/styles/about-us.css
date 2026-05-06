@@ -1,19 +1,23 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     background: #f5f5f5;
 }
 
-/* CONTENEDOR GENERAL */
-.container {
-    width: 90%;
-    margin: auto;
+/* HEADER */
+.header {
+    text-align: center;
     padding: 20px;
 }
 
-/* TITULO */
-h1 {
-    text-align: center;
+.title {
     margin-bottom: 10px;
 }
 
@@ -23,21 +27,24 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 30px;
 }
 
-.nav a {
-    margin: 0 15px;
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-/* ICONOS DERECHA */
+/* ICONOS */
 .icons {
     position: absolute;
-    right: 0;
-    font-size: 18px;
+    right: 20px;
 }
 
 .icons span {
@@ -45,35 +52,61 @@ h1 {
     cursor: pointer;
 }
 
-/* SECCION PRINCIPAL */
+/* MAIN */
 .main {
+    width: 90%;
+    margin: auto;
+}
+
+/* SECCION PRINCIPAL */
+.about-section {
+    margin-top: 40px;
+}
+
+.about-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
-/* IMAGEN GRANDE */
-.image-box {
-    width: 40%;
-    height: 250px;
+/* IMAGEN */
+.image-box img {
+    width: 100%;
+    max-width: 400px;
     border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
 }
 
-/* TEXTO DERECHA */
+/* TEXTO */
 .text-box {
-    width: 50%;
+    max-width: 500px;
 }
 
-.text-box h2 {
-    margin-bottom: 10px;
-}
-
-/* SECCION INFERIOR */
-.about {
+/* QUIENES SOMOS */
+.who-section {
     text-align: center;
     margin-top: 50px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons {
+        position: static;
+        margin-top: 10px;
+    }
 }
