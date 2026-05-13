@@ -1,0 +1,308 @@
+/* =========================
+        GENERAL
+========================= */
+
+body{
+    background-color: #D8C59D;
+    font-family: 'Poppins', sans-serif;
+    color: #3B2A1A;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/* =========================
+        HERO
+========================= */
+
+.hero-section{
+    position: relative;
+    background: linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    #D8C59D;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero-description{
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-main{
+    background-color: #6D4B2B;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-main:hover{
+    background-color: #4d341d;
+    color: white;
+}
+
+.btn-outline-custom{
+    border: 2px solid white;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+}
+
+.btn-outline-custom:hover{
+    background-color: white;
+    color: #3B2A1A;
+}
+
+.hero-image{
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* =========================
+        TITULOS
+========================= */
+
+.section-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle{
+    color: #6b5a47;
+    font-size: 18px;
+}
+
+/* =========================
+        CATALOGO
+========================= */
+
+.catalog-card{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.catalog-card:hover{
+    transform: translateY(-10px);
+}
+
+.catalog-card img{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.catalog-content{
+    padding: 25px;
+}
+
+.catalog-content h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.catalog-content a{
+    color: #6D4B2B;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =========================
+    TEMPORADAS ECOMMERCE
+========================= */
+
+.season-ecommerce-section{
+    background-color: #D8C59D;
+    padding: 120px 0;
+}
+
+/* HEADER */
+
+.season-tag{
+    background-color: #6D4B2B;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.season-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    margin-top: 25px;
+    color: #3B2A1A;
+}
+
+.season-subtitle{
+    color: #5f4d3c;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* CARD */
+
+.season-product-card{
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.season-product-card:hover{
+    transform: translateY(-12px);
+}
+
+/* IMAGEN */
+
+.season-image-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.season-image{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.season-product-card:hover .season-image{
+    transform: scale(1.08);
+}
+
+/* BADGE */
+
+.season-badge{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: #6D4B2B;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTENIDO */
+
+.season-content{
+    padding: 28px;
+}
+
+.season-content h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #3B2A1A;
+    font-family: 'Playfair Display', serif;
+}
+
+.season-content p{
+    color: #5f4d3c;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* BOTON */
+
+.season-button{
+    width: 100%;
+    border: none;
+    background-color: #6D4B2B;
+    color: white;
+    padding: 14px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.season-button:hover{
+    background-color: #4A321D;
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+    .season-title{
+        font-size: 38px;
+    }
+
+    .season-content h3{
+        font-size: 24px;
+    }
+
+}
+/* =========================
+        RESPONSIVE
+========================= */
+
+@media(max-width: 992px){
+
+    .hero-title{
+        font-size: 48px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
+
+    .hero-image{
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .hero-title{
+        font-size: 38px;
+    }
+
+    .section-title{
+        font-size: 36px;
+    }
+
+}
+/* =========================
+        SCROLL SUAVE
+========================= */
+
+html{
+    scroll-behavior: smooth;
+}
