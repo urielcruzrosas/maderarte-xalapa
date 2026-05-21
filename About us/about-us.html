@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | Maderarte</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- CSS PERSONALIZADO -->
     <link rel="stylesheet" href="/src/styles/about-us.css">
@@ -11,57 +15,66 @@
 
 <body>
 
-<main class="container">
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
 
-    <div class="content-card">
+    <main class="container">
 
-        <!-- SECCIÓN PRINCIPAL -->
-        <div class="row align-items-center">
+        <div class="content-card">
 
-            <!-- IMAGEN -->
-            <div class="col-md-5 text-center mb-4 mb-md-0">
+            <!-- SECCIÓN PRINCIPAL -->
+            <div class="row align-items-center">
 
-                <img 
-                    src="/src/images/about-us/maderarte-image.webp"
-                    class="main-image img-fluid"
-                    alt="Maderarte">
+                <!-- IMAGEN -->
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+
+                    <img src="/src/images/about-us/maderarte-image.webp" class="main-image img-fluid" alt="Maderarte">
+
+                </div>
+
+                <!-- TEXTO -->
+                <div class="col-md-7">
+
+                    <h2 class="section-title">
+                        Nuestra misión
+                    </h2>
+
+                    <p class="mission-text">
+                        Crear productos de madera y MDF funcionales, estéticos y accesibles,
+                        que satisfagan las necesidades de nuestros clientes, mediante procesos
+                        cuidados, diseño creativo y un compromiso constante con la calidad.
+                    </p>
+
+                </div>
 
             </div>
 
-            <!-- TEXTO -->
-            <div class="col-md-7">
+            <!-- QUIENES SOMOS -->
+            <div class="about-section">
 
                 <h2 class="section-title">
-                    Nuestra misión
+                    ¿Quiénes somos?
                 </h2>
 
-                <p class="mission-text">
-                    Crear productos de madera y MDF funcionales, estéticos y accesibles,
-                    que satisfagan las necesidades de nuestros clientes, mediante procesos
-                    cuidados, diseño creativo y un compromiso constante con la calidad.
+                <p class="about-description">
+                    Proveedores de mobiliario para mesa de dulces, cajas de madera y MDF
+                    usadas en centros de mesa, recuerdos, regalos entre otros usos,
+                    precios de mayoreo surtimos su negocio, atención personalizada.
                 </p>
 
             </div>
 
         </div>
 
-        <!-- QUIENES SOMOS -->
-        <div class="about-section">
+    </main>
 
-            <h2 class="section-title">
-                ¿Quiénes somos?
-            </h2>
+    <!-- BOOTSTRAP JS -->
+    <div id="footer-placeholder"></div>
 
-            <p class="about-description">
-                Proveedores de mobiliario para mesa de dulces, cajas de madera y MDF
-                usadas en centros de mesa, recuerdos, regalos entre otros usos,
-                precios de mayoreo surtimos su negocio, atención personalizada.
-            </p>
 
-        </div>
-
-    </div>
-
-</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/src/js/main.js"></script>
 
 </body>

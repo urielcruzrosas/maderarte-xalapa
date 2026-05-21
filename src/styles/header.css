@@ -1,0 +1,12 @@
+/* Estado normal: sin línea y con transición suave */
+.custom-hover {
+    color: white !important;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Línea transparente por defecto */
+    transition: border-color 0.3s ease-in-out; /* Animación fluida */
+}
+
+/* Estado hover: la línea se vuelve blanca */
+.custom-hover:hover {
+    border-bottom: 2px solid white;
+}
