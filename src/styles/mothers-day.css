@@ -1,0 +1,342 @@
+/* =========================
+        HERO TEMPORADA
+========================= */
+
+.season-hero{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #F4D6D6,
+        #FCEEEE
+    );
+}
+
+/* OVERLAY */
+
+.season-hero-overlay{
+    position: absolute;
+    inset: 0;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255,255,255,0.45),
+        transparent 40%
+    );
+
+    z-index: 1;
+}
+
+/* CONTENT */
+
+.season-hero .container{
+    z-index: 2;
+}
+
+/* LABEL */
+
+.season-label{
+    display: inline-block;
+
+    background-color: #8B3A3A;
+    color: white;
+
+    padding: 12px 24px;
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    margin-bottom: 30px;
+}
+
+/* TITLE */
+
+.season-hero-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    line-height: 1.1;
+    color: #4A1E1E;
+
+    margin-bottom: 30px;
+}
+
+/* DESCRIPTION */
+
+.season-hero-description{
+    font-size: 20px;
+    line-height: 2;
+    color: #6B2D2D;
+
+    max-width: 600px;
+
+    margin-bottom: 40px;
+}
+
+/* BUTTONS */
+
+.season-hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+/* PRIMARY BUTTON */
+
+.btn-season-primary{
+    text-decoration: none;
+
+    background-color: #8B3A3A;
+    color: white;
+
+    padding: 16px 34px;
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-season-primary:hover{
+    background-color: #6E2E2E;
+    transform: translateY(-3px);
+
+    color: white;
+}
+
+/* SECONDARY BUTTON */
+
+.btn-season-secondary{
+    text-decoration: none;
+
+    border: 2px solid #8B3A3A;
+    color: #8B3A3A;
+
+    padding: 16px 34px;
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-season-secondary:hover{
+    background-color: #8B3A3A;
+    color: white;
+}
+
+/* =========================
+    HERO CAROUSEL
+========================= */
+
+.season-carousel{
+    position: relative;
+}
+
+/* IMAGEN */
+
+.season-hero-image{
+    width: 100%;
+    height: 650px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* INDICADORES */
+
+.season-carousel .carousel-indicators{
+    bottom: -50px;
+}
+
+.season-carousel .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background-color: #8B3A3A;
+}
+
+/* CONTROLES */
+
+.season-carousel .carousel-control-prev,
+.season-carousel .carousel-control-next{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* MOSTRAR AL HOVER */
+
+.season-carousel:hover .carousel-control-prev,
+.season-carousel:hover .carousel-control-next{
+    opacity: 1;
+}
+
+/* ICONOS */
+
+.season-carousel .carousel-control-prev-icon,
+.season-carousel .carousel-control-next-icon{
+
+    background-color: rgba(0,0,0,0.45);
+
+    border-radius: 50%;
+
+    padding: 24px;
+}
+
+/* EFECTO SLIDE */
+
+.carousel-item{
+    transition: transform 0.8s ease-in-out;
+}
+
+/* DECOR BLURS */
+
+.season-blur{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+}
+
+.blur-1{
+    width: 300px;
+    height: 300px;
+
+    background-color: #D89A9A;
+
+    top: -80px;
+    left: -80px;
+}
+
+.blur-2{
+    width: 350px;
+    height: 350px;
+
+    background-color: #F8CACA;
+
+    bottom: -100px;
+    right: -100px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 992px){
+
+    .season-hero{
+        padding: 120px 0;
+    }
+
+    .season-hero-title{
+        font-size: 62px;
+    }
+
+    .season-hero-image-wrapper{
+        margin-top: 60px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .season-hero-title{
+        font-size: 48px;
+    }
+
+    .season-hero-description{
+        font-size: 18px;
+    }
+
+    .season-hero-buttons{
+        flex-direction: column;
+    }
+
+}
+/* =========================
+    DIA DE LAS MADRES
+========================= */
+
+.mothersday-hero{
+    background:
+    linear-gradient(
+        135deg,
+        #F7ECE5,
+        #FFF8F3
+    );
+}
+
+/* LABEL */
+
+.mothersday-label{
+    background-color: #B07D62;
+}
+
+/* TITULO */
+
+.mothersday-title{
+    color: #6A4638;
+}
+
+/* DESCRIPCION */
+
+.mothersday-description{
+    color: #7C5A4D;
+}
+
+/* BOTON PRINCIPAL */
+
+.mothersday-primary{
+    background-color: #B07D62;
+}
+
+.mothersday-primary:hover{
+    background-color: #9A694F;
+}
+
+/* BOTON SECUNDARIO */
+
+.mothersday-secondary{
+    border: 2px solid #B07D62;
+    color: #B07D62;
+}
+
+.mothersday-secondary:hover{
+    background-color: #B07D62;
+    color: white;
+}
+
+/* INDICADORES */
+
+.mothersday-hero .carousel-indicators button{
+    background-color: #B07D62;
+}
+
+/* BLURS */
+
+.mothersday-blur-1{
+    width: 320px;
+    height: 320px;
+
+    background-color: #E6CDBF;
+
+    top: -100px;
+    left: -80px;
+}
+
+.mothersday-blur-2{
+    width: 360px;
+    height: 360px;
+
+    background-color: #F3DED2;
+
+    bottom: -120px;
+    right: -100px;
+}
