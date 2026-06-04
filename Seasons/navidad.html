@@ -6,133 +6,74 @@
 
 <section class="season-hero christmas-hero">
 
-    <!-- OVERLAY -->
-    <div class="season-hero-overlay"></div>
+    <div class="container">
 
-    <div class="container position-relative">
+        <div class="hero-content text-center">
 
-        <div class="row align-items-center min-vh-100">
+            <span class="season-label christmas-label">
+                COLECCIÓN ESPECIAL
+            </span>
 
-            <!-- TEXTO -->
-            <div class="col-lg-6">
+            <h1 class="season-title christmas-title">
+                Navidad
+            </h1>
 
-                <span class="season-label christmas-label">
-                    COLECCIÓN ESPECIAL
-                </span>
+            <p class="season-description christmas-description">
+                Decoraciones y regalos artesanales creados
+                para llenar cada espacio de calidez,
+                tradición y espíritu navideño.
+            </p>
 
-                <h1 class="season-hero-title christmas-title">
-                    Navidad
-                </h1>
+            <a href="#galeria" class="season-button">
 
-                <p class="season-hero-description christmas-description">
-                    Decoraciones y regalos artesanales creados
-                    para llenar cada espacio de magia,
-                    calidez y espíritu navideño.
-                </p>
+                Descubrir colección
 
-                <!-- BOTONES -->
-                <div class="season-hero-buttons">
-
-                    <a href="#coleccion" class="btn-season-primary christmas-primary">
-                        Ver colección
-                    </a>
-
-                    <a href="#" class="btn-season-secondary christmas-secondary">
-                        Contactar
-                    </a>
-
+                <div class="season-button-icon">
+                    →
                 </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="season-gallery" id="galeria">
+
+    <div class="container">
+
+        <div class="gallery-header text-center">
+
+            <h2>
+                Inspiración Navideña
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- IMAGEN PRINCIPAL -->
+
+            <div class="gallery-main">
+
+                <img
+                    src="/src/images/seasons/navidad1.webp"
+                    alt="Navidad">
 
             </div>
 
-            <!-- IMAGENES SLIDER -->
-            <div class="col-lg-6">
+            <!-- IMÁGENES SECUNDARIAS -->
 
-                <div id="christmasCarousel" 
-                    class="carousel slide season-carousel"
-                    data-bs-ride="carousel">
+            <div class="gallery-side">
 
-                    <!-- INDICADORES -->
-                    <div class="carousel-indicators">
+                <img
+                    src="/src/images/seasons/navidad2.webp"
+                    alt="Colección Navidad">
 
-                        <button 
-                            type="button"
-                            data-bs-target="#christmasCarousel"
-                            data-bs-slide-to="0"
-                            class="active">
-                        </button>
-
-                        <button 
-                            type="button"
-                            data-bs-target="#christmasCarousel"
-                            data-bs-slide-to="1">
-                        </button>
-
-                        <button 
-                            type="button"
-                            data-bs-target="#christmasCarousel"
-                            data-bs-slide-to="2">
-                        </button>
-
-                    </div>
-
-                    <!-- SLIDES -->
-                    <div class="carousel-inner season-carousel-inner">
-
-                        <!-- SLIDE 1 -->
-                        <div class="carousel-item active">
-
-                            <img 
-                                src="src/images/seasons/christmas-1.webp"
-                                class="season-hero-image"
-                                alt="Navidad">
-
-                        </div>
-
-                        <!-- SLIDE 2 -->
-                        <div class="carousel-item">
-
-                            <img 
-                                src="src/images/seasons/christmas-2.webp"
-                                class="season-hero-image"
-                                alt="Decoración Navideña">
-
-                        </div>
-
-                        <!-- SLIDE 3 -->
-                        <div class="carousel-item">
-
-                            <img 
-                                src="src/images/seasons/christmas-3.webp"
-                                class="season-hero-image"
-                                alt="Colección Navideña">
-
-                        </div>
-
-                    </div>
-
-                    <!-- CONTROLES -->
-                    <button 
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#christmasCarousel"
-                        data-bs-slide="prev">
-
-                        <span class="carousel-control-prev-icon"></span>
-
-                    </button>
-
-                    <button 
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#christmasCarousel"
-                        data-bs-slide="next">
-
-                        <span class="carousel-control-next-icon"></span>
-
-                    </button>
-
-                </div>
+                <img
+                    src="/src/images/seasons/navidad3.webp"
+                    alt="Decoración Navideña">
 
             </div>
 
@@ -140,8 +81,77 @@
 
     </div>
 
-    <!-- EFECTOS DECORATIVOS -->
-    <div class="season-blur christmas-blur-1"></div>
-    <div class="season-blur christmas-blur-2"></div>
+</section>
+<section class="season-products">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <h2>
+                Favoritos de Navidad
+            </h2>
+
+        </div>
+
+        <div class="products-grid">
+
+            <article class="product-card">
+
+                <img
+                    src="/src/images/seasons/valentin4.webp"
+                    alt="Caja Navideña">
+
+                <h3>Caja Navideña</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img
+                    src="/src/images/seasons/valentin5.webp"
+                    alt="Decoración MDF">
+
+                <h3>Decoración MDF</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img
+                    src="/src/images/seasons/navidad.webp"
+                    alt="Centro Navideño">
+
+                <h3>Centro Navideño</h3>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="season-cta christmas-cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+                Haz especial esta Navidad
+            </h2>
+
+            <p>
+                Creamos detalles personalizados que
+                transforman cada celebración en un recuerdo inolvidable.
+            </p>
+
+            <a href="#" class="cta-button">
+                Solicitar información
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
