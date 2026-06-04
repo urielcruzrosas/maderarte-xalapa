@@ -1,342 +1,215 @@
+
 /* =========================
-        HERO TEMPORADA
+    DIA DE LAS MADRES
 ========================= */
 
 .season-hero{
-    position: relative;
-    min-height: 100vh;
-    overflow: hidden;
+    padding: 180px 0;
+    text-align: center;
 
     background:
     linear-gradient(
         135deg,
         #F4D6D6,
-        #FCEEEE
+        #FFF7F7
     );
 }
 
-/* OVERLAY */
-
-.season-hero-overlay{
-    position: absolute;
-    inset: 0;
-
-    background:
-    radial-gradient(
-        circle at top left,
-        rgba(255,255,255,0.45),
-        transparent 40%
-    );
-
-    z-index: 1;
-}
-
-/* CONTENT */
-
-.season-hero .container{
-    z-index: 2;
-}
-
-/* LABEL */
-
-.season-label{
-    display: inline-block;
-
-    background-color: #8B3A3A;
-    color: white;
-
-    padding: 12px 24px;
-    border-radius: 50px;
-
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    margin-bottom: 30px;
-}
-
-/* TITLE */
-
-.season-hero-title{
-    font-family: 'Playfair Display', serif;
+.season-title{
     font-size: 90px;
-    line-height: 1.1;
+    font-family: 'Playfair Display', serif;
     color: #4A1E1E;
-
-    margin-bottom: 30px;
 }
 
-/* DESCRIPTION */
-
-.season-hero-description{
+.season-description{
+    max-width: 700px;
+    margin: 30px auto;
     font-size: 20px;
-    line-height: 2;
-    color: #6B2D2D;
-
-    max-width: 600px;
-
-    margin-bottom: 40px;
 }
 
-/* BUTTONS */
+.season-button{
 
-.season-hero-buttons{
-    display: flex;
-    gap: 20px;
-}
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
 
-/* PRIMARY BUTTON */
-
-.btn-season-primary{
-    text-decoration: none;
+    padding: 10px 10px 10px 30px;
 
     background-color: #8B3A3A;
-    color: white;
 
-    padding: 16px 34px;
-    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 100px;
 
     font-weight: 600;
 
-    transition: 0.3s ease;
+    transition: .35s ease;
+
+    box-shadow:
+    0 12px 30px rgba(139,58,58,.25);
 }
 
-.btn-season-primary:hover{
-    background-color: #6E2E2E;
-    transform: translateY(-3px);
+.season-button-icon{
 
-    color: white;
-}
+    width: 48px;
+    height: 48px;
 
-/* SECONDARY BUTTON */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.btn-season-secondary{
-    text-decoration: none;
+    background-color: white;
 
-    border: 2px solid #8B3A3A;
     color: #8B3A3A;
 
-    padding: 16px 34px;
-    border-radius: 50px;
+    border-radius: 50%;
 
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: bold;
 
-    transition: 0.3s ease;
+    transition: .35s ease;
 }
 
-.btn-season-secondary:hover{
-    background-color: #8B3A3A;
+.season-button:hover{
+
+    transform: translateY(-4px);
+
     color: white;
 }
 
-/* =========================
-    HERO CAROUSEL
-========================= */
+.season-button:hover .season-button-icon{
 
-.season-carousel{
-    position: relative;
+    transform: rotate(-45deg);
 }
 
-/* IMAGEN */
+.season-gallery{
+    padding: 120px 0;
+    background: white;
+}
 
-.season-hero-image{
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.gallery-main img{
     width: 100%;
-    height: 650px;
-
+    height: 700px;
     object-fit: cover;
-
     border-radius: 30px;
-
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
-/* INDICADORES */
-
-.season-carousel .carousel-indicators{
-    bottom: -50px;
+.gallery-side{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.season-carousel .carousel-indicators button{
-    width: 12px;
-    height: 12px;
-
-    border-radius: 50%;
-
-    background-color: #8B3A3A;
+.gallery-side img{
+    width: 100%;
+    height: 337px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
-/* CONTROLES */
-
-.season-carousel .carousel-control-prev,
-.season-carousel .carousel-control-next{
-    opacity: 0;
-    transition: 0.3s ease;
+.season-products{
+    padding: 120px 0;
+    background-color: #FAF7F2;
 }
 
-/* MOSTRAR AL HOVER */
-
-.season-carousel:hover .carousel-control-prev,
-.season-carousel:hover .carousel-control-next{
-    opacity: 1;
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
 }
 
-/* ICONOS */
+.product-card{
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
 
-.season-carousel .carousel-control-prev-icon,
-.season-carousel .carousel-control-next-icon{
-
-    background-color: rgba(0,0,0,0.45);
-
-    border-radius: 50%;
-
-    padding: 24px;
+    transition: .3s;
 }
 
-/* EFECTO SLIDE */
-
-.carousel-item{
-    transition: transform 0.8s ease-in-out;
+.product-card:hover{
+    transform: translateY(-10px);
 }
 
-/* DECOR BLURS */
-
-.season-blur{
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(90px);
-    opacity: 0.35;
+.product-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
 }
 
-.blur-1{
-    width: 300px;
-    height: 300px;
-
-    background-color: #D89A9A;
-
-    top: -80px;
-    left: -80px;
+.season-cta{
+    padding: 120px 0;
 }
 
-.blur-2{
-    width: 350px;
-    height: 350px;
+.cta-box{
+    background: #F4D6D6;
 
-    background-color: #F8CACA;
+    border-radius: 40px;
 
-    bottom: -100px;
-    right: -100px;
+    padding: 80px;
+
+    text-align: center;
 }
 
-/* RESPONSIVE */
+.cta-button{
+    display: inline-block;
 
-@media(max-width: 992px){
+    margin-top: 20px;
 
-    .season-hero{
-        padding: 120px 0;
-    }
+    padding: 18px 40px;
 
-    .season-hero-title{
-        font-size: 62px;
-    }
+    background: #8B3A3A;
+    color: white;
 
-    .season-hero-image-wrapper{
-        margin-top: 60px;
-    }
+    border-radius: 50px;
 
+    text-decoration: none;
 }
 
-@media(max-width: 768px){
+.mothers-hero{
 
-    .season-hero-title{
-        font-size: 48px;
-    }
-
-    .season-hero-description{
-        font-size: 18px;
-    }
-
-    .season-hero-buttons{
-        flex-direction: column;
-    }
-
-}
-/* =========================
-    DIA DE LAS MADRES
-========================= */
-
-.mothersday-hero{
     background:
     linear-gradient(
         135deg,
-        #F7ECE5,
-        #FFF8F3
+        #F7E4E8,
+        #FFF7F8
     );
+
 }
 
 /* LABEL */
 
-.mothersday-label{
-    background-color: #B07D62;
+.mothers-label{
+    background-color: #C08497;
 }
 
 /* TITULO */
 
-.mothersday-title{
-    color: #6A4638;
+.mothers-title{
+    color: #7A4E5E;
 }
 
 /* DESCRIPCION */
 
-.mothersday-description{
-    color: #7C5A4D;
+.mothers-description{
+    color: #9A7180;
 }
 
-/* BOTON PRINCIPAL */
+/* CTA */
 
-.mothersday-primary{
-    background-color: #B07D62;
-}
+.mothers-cta .cta-box{
 
-.mothersday-primary:hover{
-    background-color: #9A694F;
-}
+    background:
+    linear-gradient(
+        135deg,
+        #F7DDE4,
+        #FFF5F7
+    );
 
-/* BOTON SECUNDARIO */
-
-.mothersday-secondary{
-    border: 2px solid #B07D62;
-    color: #B07D62;
-}
-
-.mothersday-secondary:hover{
-    background-color: #B07D62;
-    color: white;
-}
-
-/* INDICADORES */
-
-.mothersday-hero .carousel-indicators button{
-    background-color: #B07D62;
-}
-
-/* BLURS */
-
-.mothersday-blur-1{
-    width: 320px;
-    height: 320px;
-
-    background-color: #E6CDBF;
-
-    top: -100px;
-    left: -80px;
-}
-
-.mothersday-blur-2{
-    width: 360px;
-    height: 360px;
-
-    background-color: #F3DED2;
-
-    bottom: -120px;
-    right: -100px;
 }
