@@ -19,6 +19,7 @@ section{
 
 .hero-section{
     position: relative;
+    padding: 0;
     background: linear-gradient(
         rgba(0,0,0,0.35),
         rgba(0,0,0,0.35)
@@ -77,8 +78,10 @@ section{
     color: #3B2A1A;
 }
 
-.hero-image{
-    max-width: 500px;
+.hero-image {
+    width: 100%;        /* Obliga a la imagen a adaptarse a la columna en móviles */
+    max-width: 500px;   /* Limita el tamaño en pantallas grandes (escritorio) */
+    height: auto;       /* Evita que la imagen se deforme o aplaste */
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
@@ -237,25 +240,29 @@ section{
     margin-bottom: 25px;
 }
 
-/* BOTON */
+/* BOTON / ENLACE DE COLECCIÓN */
 
-.season-button{
+.btn-coleccion {
+    display: block; /* Asegura que el enlace se comporte como bloque para respetar el ancho */
     width: 100%;
-    border: none;
+    box-sizing: border-box; /* Previene que el padding rompa el 100% del ancho */
     background-color: #6D4B2B;
     color: white;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    text-align: center; /* Centra el texto */
     padding: 14px;
     border-radius: 14px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-.season-button:hover{
+.btn-coleccion:hover {
     background-color: #4A321D;
+    color: white; /* Asegura que el texto siga siendo blanco */
     transform: scale(1.02);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE TEMPORADAS */
 
 @media(max-width: 768px){
 
@@ -269,7 +276,7 @@ section{
 
 }
 /* =========================
-        RESPONSIVE
+        RESPONSIVE GENERAL
 ========================= */
 
 @media(max-width: 992px){
