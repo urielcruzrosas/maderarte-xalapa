@@ -1,17 +1,46 @@
+/* =====================================================
+   VARIABLES GLOBALES
+===================================================== */
+
+:root{
+
+    /* Colores */
+    --color-bg: #D8C59D;
+    --color-primary: #6D4B2B;
+    --color-primary-hover: #4D341D;
+
+    --color-text: #3B2A1A;
+    --color-text-secondary: #5F4D3C;
+    --color-text-muted: #6B5A47;
+
+    --color-white: #FFFFFF;
+
+    /* Sombras */
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.3);
+    --shadow-xl: 0 12px 35px rgba(0,0,0,0.12);
+
+    /* Tipografías */
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
 .bg-color-base {
-    background-color: #D8C59D; /* El color rosado claro de tu imagen */
+    background-color: var(--color-bg);
 }
 
 .fuente-personalizada {
-    font-family: 'Arial', serif;
+    font-family: var(--font-heading);
 }
 
 .bg-color-secondary {
-    background-color: #C9A66B; /* El color marrón claro de tu imagen */
+    background-color: var(--color-primary);
 }
 
 .mi-boton-personalizado {
-    background-color: #tu-color-hex;
+    background-color: var(--color-primary);
+    color: var(--color-white); 
     border: none;
-    border-radius: 8px; /* Si quieres bordes redondeados */
+    border-radius: 8px;
 }
