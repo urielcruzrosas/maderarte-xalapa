@@ -1,13 +1,43 @@
-/* =========================
-    INSTAGRAM GALLERY
-========================= */
+/* =====================================================
+   VARIABLES GLOBALES
+===================================================== */
+
+:root{
+
+    /* Colores */
+    --color-bg: #D8C59D;
+    --color-primary: #6D4B2B;
+    --color-primary-hover: #4D341D;
+
+    --color-text: #3B2A1A;
+    --color-text-secondary: #5F4D3C;
+    --color-text-muted: #6B5A47;
+
+    --color-white: #FFFFFF;
+
+    /* Sombras */
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.3);
+    --shadow-xl: 0 12px 35px rgba(0,0,0,0.12);
+
+    /* Tipografías */
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* =====================================================
+   INSTAGRAM GALLERY
+===================================================== */
 
 .instagram-gallery-section{
     padding: 120px 0;
-    background-color: #FAF7F2;
+    background-color: var(--color-white);
 }
 
-/* HEADER */
+/* =====================================================
+   HEADER
+===================================================== */
 
 .gallery-header{
     margin-bottom: 70px;
@@ -16,8 +46,8 @@
 .gallery-label{
     display: inline-block;
 
-    background-color: #B08968;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-white);
 
     padding: 12px 26px;
 
@@ -26,14 +56,16 @@
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
+
+    font-family: var(--font-body);
 }
 
 .gallery-title{
     font-size: 72px;
 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
 
-    color: #5C4033;
+    color: var(--color-text);
 
     margin-top: 25px;
 }
@@ -43,13 +75,17 @@
 
     margin: 20px auto 0;
 
-    color: #7A5C4D;
+    color: var(--color-text-secondary);
 
     font-size: 18px;
     line-height: 2;
+
+    font-family: var(--font-body);
 }
 
-/* GRID */
+/* =====================================================
+   GRID
+===================================================== */
 
 .instagram-grid{
     display: grid;
@@ -61,7 +97,9 @@
     gap: 25px;
 }
 
-/* ITEMS */
+/* =====================================================
+   ITEMS
+===================================================== */
 
 .gallery-item{
     position: relative;
@@ -72,22 +110,28 @@
 
     cursor: pointer;
 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md);
 }
 
-/* LARGE */
+/* =====================================================
+   LARGE
+===================================================== */
 
 .gallery-item.large{
     grid-column: span 2;
 }
 
-/* TALL */
+/* =====================================================
+   TALL
+===================================================== */
 
 .gallery-item.tall{
     grid-row: span 2;
 }
 
-/* IMAGE */
+/* =====================================================
+   IMAGE
+===================================================== */
 
 .gallery-item img{
     width: 100%;
@@ -98,18 +142,20 @@
     transition: transform 0.6s ease;
 }
 
-/* OVERLAY */
+/* =====================================================
+   OVERLAY
+===================================================== */
 
 .gallery-overlay{
     position: absolute;
     inset: 0;
 
     background:
-    linear-gradient(
-        to top,
-        rgba(0,0,0,0.65),
-        transparent
-    );
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.65),
+            transparent
+        );
 
     display: flex;
     align-items: flex-end;
@@ -122,17 +168,21 @@
 }
 
 .gallery-overlay span{
-    color: white;
+    color: var(--color-white);
 
     font-size: 20px;
     font-weight: 600;
+
+    font-family: var(--font-heading);
 
     transform: translateY(20px);
 
     transition: 0.4s ease;
 }
 
-/* HOVER */
+/* =====================================================
+   HOVER
+===================================================== */
 
 .gallery-item:hover img{
     transform: scale(1.08);
@@ -146,7 +196,9 @@
     transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 
 @media(max-width: 992px){
 
@@ -178,49 +230,59 @@
 
 }
 
-/* =========================
-        CAJAS MDF
-========================= */
+/* =====================================================
+   CAJAS MDF
+===================================================== */
 
 .mdf-gallery-section{
     background:
-    linear-gradient(
-        135deg,
-        #F7F2EC,
-        #FFFCF8
-    );
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.7),
+            rgba(255,255,255,0.95)
+        );
 }
 
-/* LABEL */
+/* =====================================================
+   LABEL MDF
+===================================================== */
 
 .mdf-label{
-    background-color: #9C6B43;
+    background-color: var(--color-primary);
 }
 
-/* TITLE */
+/* =====================================================
+   TITLE MDF
+===================================================== */
 
 .mdf-title{
-    color: #5A3B24;
+    color: var(--color-text);
 }
 
-/* DESCRIPTION */
+/* =====================================================
+   DESCRIPTION MDF
+===================================================== */
 
 .mdf-description{
-    color: #7A5A42;
+    color: var(--color-text-secondary);
 }
 
-/* OVERLAY */
+/* =====================================================
+   OVERLAY MDF
+===================================================== */
 
 .mdf-gallery-section .gallery-overlay{
     background:
-    linear-gradient(
-        to top,
-        rgba(60,35,15,0.75),
-        transparent
-    );
+        linear-gradient(
+            to top,
+            rgba(59,42,26,0.8),
+            transparent
+        );
 }
 
-/* HOVER */
+/* =====================================================
+   HOVER MDF
+===================================================== */
 
 .mdf-gallery-section .gallery-item{
     transition: 0.4s ease;
