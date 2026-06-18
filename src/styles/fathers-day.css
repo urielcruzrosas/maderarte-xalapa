@@ -1,215 +1,210 @@
+:root {
+    /* --- COLORES BASE GLOBALES --- */
+    --color-bg: #FAF7F2;
+    --color-white: #FFFFFF;
+    
+    /* Fuentes */
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Roboto', sans-serif;
+
+    /* --- TEMA SEASON (ROJOS/CÁLIDOS BASE) --- */
+    --color-season-bg-start: #F4D6D6;
+    --color-season-bg-end: #FFF7F7;
+    --color-season-title: #4A1E1E;
+    --color-season-primary: #8B3A3A;
+    --shadow-season-btn: 0 12px 30px rgba(139, 58, 58, 0.25);
+
+    /* --- TEMA DÍA DEL PADRE (AZULES/GRISÁCEOS) --- */
+    --color-fathers-bg-start: #E8EDF2;
+    --color-fathers-bg-end: #F8FAFC;
+    --color-fathers-title: #1E2E38;
+    --color-fathers-text: #b6c7d2;
+    --color-fathers-cta-start: #DCE6EC;
+    --color-fathers-cta-end: #F7FAFC;
+    
+    /* (Tus otros colores de Decoración, Recuerdos, e Instagram irían aquí) */
+}
 
 /* =========================
         DIA DEL PADRE
 ========================= */
 
-.season-hero{
+.season-hero {
     padding: 180px 0;
     text-align: center;
-
-    background:
-    linear-gradient(
+    background: linear-gradient(
         135deg,
-        #F4D6D6,
-        #FFF7F7
+        var(--color-season-bg-start),
+        var(--color-season-bg-end)
     );
+    font-family: var(--font-body); /* Aplicado para párrafos y descripciones */
 }
 
-.season-title{
+.season-title {
     font-size: 90px;
-    font-family: 'Playfair Display', serif;
-    color: #4A1E1E;
+    font-family: var(--font-heading); /* Reemplazo de Playfair por la variable global */
+    color: var(--color-season-title);
 }
 
-.season-description{
+.season-description {
     max-width: 700px;
     margin: 30px auto;
     font-size: 20px;
 }
 
-.season-button{
-
+.season-button {
     display: inline-flex;
     align-items: center;
     gap: 16px;
-
     padding: 10px 10px 10px 30px;
-
-    background-color: #8B3A3A;
-
-    color: white;
+    background-color: var(--color-season-primary);
+    color: var(--color-white);
     text-decoration: none;
-
     border-radius: 100px;
-
     font-weight: 600;
-
     transition: .35s ease;
-
-    box-shadow:
-    0 12px 30px rgba(139,58,58,.25);
+    box-shadow: var(--shadow-season-btn);
 }
 
-.season-button-icon{
-
+.season-button-icon {
     width: 48px;
     height: 48px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: white;
-
-    color: #8B3A3A;
-
+    background-color: var(--color-white);
+    color: var(--color-season-primary);
     border-radius: 50%;
-
     font-size: 22px;
     font-weight: bold;
-
     transition: .35s ease;
 }
 
-.season-button:hover{
-
+.season-button:hover {
     transform: translateY(-4px);
-
-    color: white;
+    color: var(--color-white);
 }
 
-.season-button:hover .season-button-icon{
-
+.season-button:hover .season-button-icon {
     transform: rotate(-45deg);
 }
 
-.season-gallery{
+.season-gallery {
     padding: 120px 0;
-    background: white;
+    background: var(--color-white);
 }
 
-.gallery-grid{
+.gallery-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 25px;
 }
 
-.gallery-main img{
+.gallery-main img {
     width: 100%;
     height: 700px;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.gallery-side{
+.gallery-side {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.gallery-side img{
+.gallery-side img {
     width: 100%;
     height: 337px;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.season-products{
+.season-products {
     padding: 120px 0;
-    background-color: #FAF7F2;
+    background-color: var(--color-bg); /* Utiliza tu color de fondo global */
 }
 
-.products-grid{
+.products-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.product-card{
-    background: white;
+.product-card {
+    background: var(--color-white);
     border-radius: 30px;
     overflow: hidden;
-
     transition: .3s;
 }
 
-.product-card:hover{
+.product-card:hover {
     transform: translateY(-10px);
 }
 
-.product-card img{
+.product-card img {
     width: 100%;
     height: 320px;
     object-fit: cover;
 }
 
-.season-cta{
+.season-cta {
     padding: 120px 0;
 }
 
-.cta-box{
-    background: #F4D6D6;
-
+.cta-box {
+    background: var(--color-season-bg-start);
     border-radius: 40px;
-
     padding: 80px;
-
     text-align: center;
 }
 
-.cta-button{
+.cta-button {
     display: inline-block;
-
     margin-top: 20px;
-
     padding: 18px 40px;
-
-    background: #8B3A3A;
-    color: white;
-
+    background: var(--color-season-primary);
+    color: var(--color-white);
     border-radius: 50px;
-
     text-decoration: none;
 }
 
-.fathers-hero{
+/* =========================
+    MODIFICADORES DÍA DEL PADRE
+========================= */
 
-    background:
-    linear-gradient(
+.fathers-hero {
+    background: linear-gradient(
         135deg,
-        #E8EDF2,
-        #F8FAFC
+        var(--color-fathers-bg-start),
+        var(--color-fathers-bg-end)
     );
-
 }
 
 /* LABEL */
 
-.fathers-label{
-    background-color: #2F4858;
+.fathers-label {
+    background-color: var(--color-fathers-primary);
 }
 
 /* TITULO */
 
-.fathers-title{
-    color: #1E2E38;
+.fathers-title {
+    color: var(--color-fathers-title);
 }
 
 /* DESCRIPCION */
 
-.fathers-description{
-    color: #556874;
+.fathers-description {
+    color: var(--color-fathers-text);
 }
 
 /* CTA */
 
-.fathers-cta .cta-box{
-
-    background:
-    linear-gradient(
+.fathers-cta .cta-box {
+    background: linear-gradient(
         135deg,
-        #DCE6EC,
-        #F7FAFC
+        var(--color-fathers-cta-start),
+        var(--color-fathers-cta-end)
     );
-
 }
