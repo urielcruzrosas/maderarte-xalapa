@@ -1,179 +1,169 @@
+:root {
+    /* Colores extraídos del diseño original */
+    --color-bg: #FAF7F2;
+    --color-primary: #B08968;
+    
+    --color-text: #5C4033;
+    --color-text-secondary: #7A5C4D;
+    
+    --color-white: #FFFFFF;
+
+    /* Sombras */
+    --shadow-sm: 0 5px 15px rgba(0,0,0,0.1);
+    --shadow-md: 0 15px 35px rgba(0,0,0,0.08); /* Sombra extraída de gallery-item */
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.3);
+    --shadow-xl: 0 12px 35px rgba(0,0,0,0.12);
+
+    /* Fuentes */
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
 /* =========================
     INSTAGRAM GALLERY
 ========================= */
 
-.instagram-gallery-section{
+.instagram-gallery-section {
     padding: 120px 0;
-    background-color: #FAF7F2;
+    background-color: var(--color-bg);
+    font-family: var(--font-body); /* Se aplica al contenedor para que párrafos y textos lo hereden */
 }
 
 /* HEADER */
 
-.gallery-header{
+.gallery-header {
     margin-bottom: 70px;
 }
 
-.gallery-label{
+.gallery-label {
     display: inline-block;
-
-    background-color: #B08968;
-    color: white;
-
+    background-color: var(--color-primary);
+    color: var(--color-white);
     padding: 12px 26px;
-
     border-radius: 50px;
-
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.gallery-title{
+.gallery-title {
     font-size: 72px;
-
-    font-family: 'Playfair Display', serif;
-
-    color: #5C4033;
-
+    font-family: var(--font-heading); /* Nueva fuente para headings */
+    color: var(--color-text);
     margin-top: 25px;
 }
 
-.gallery-description{
+.gallery-description {
     max-width: 700px;
-
     margin: 20px auto 0;
-
-    color: #7A5C4D;
-
+    color: var(--color-text-secondary);
     font-size: 18px;
     line-height: 2;
 }
 
 /* GRID */
 
-.instagram-grid{
+.instagram-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     grid-auto-rows: 280px;
-
     gap: 25px;
 }
 
 /* ITEMS */
 
-.gallery-item{
+.gallery-item {
     position: relative;
-
     overflow: hidden;
-
     border-radius: 28px;
-
     cursor: pointer;
-
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md); /* Sombra aplicada desde las variables */
 }
 
 /* LARGE */
 
-.gallery-item.large{
+.gallery-item.large {
     grid-column: span 2;
 }
 
 /* TALL */
 
-.gallery-item.tall{
+.gallery-item.tall {
     grid-row: span 2;
 }
 
 /* IMAGE */
 
-.gallery-item img{
+.gallery-item img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     transition: transform 0.6s ease;
 }
 
 /* OVERLAY */
 
-.gallery-overlay{
+.gallery-overlay {
     position: absolute;
     inset: 0;
-
-    background:
-    linear-gradient(
+    background: linear-gradient(
         to top,
         rgba(0,0,0,0.65),
         transparent
     );
-
     display: flex;
     align-items: flex-end;
-
     padding: 30px;
-
     opacity: 0;
-
     transition: 0.4s ease;
 }
 
-.gallery-overlay span{
-    color: white;
-
+.gallery-overlay span {
+    color: var(--color-white);
     font-size: 20px;
     font-weight: 600;
-
     transform: translateY(20px);
-
     transition: 0.4s ease;
 }
 
 /* HOVER */
 
-.gallery-item:hover img{
+.gallery-item:hover img {
     transform: scale(1.08);
 }
 
-.gallery-item:hover .gallery-overlay{
+.gallery-item:hover .gallery-overlay {
     opacity: 1;
 }
 
-.gallery-item:hover .gallery-overlay span{
+.gallery-item:hover .gallery-overlay span {
     transform: translateY(0);
 }
 
 /* RESPONSIVE */
 
-@media(max-width: 992px){
-
-    .instagram-grid{
+@media(max-width: 992px) {
+    .instagram-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .gallery-title{
+    .gallery-title {
         font-size: 54px;
     }
-
 }
 
-@media(max-width: 768px){
-
-    .instagram-grid{
+@media(max-width: 768px) {
+    .instagram-grid {
         grid-template-columns: 1fr;
     }
 
     .gallery-item.large,
-    .gallery-item.tall{
+    .gallery-item.tall {
         grid-column: span 1;
         grid-row: span 1;
     }
 
-    .gallery-title{
+    .gallery-title {
         font-size: 42px;
     }
-
 }
