@@ -1,0 +1,139 @@
+/*==========================================
+                MODAL
+==========================================*/
+
+.modal-content{
+
+    border:none;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.modal-body{
+
+    padding:45px;
+
+}
+
+#modalImage{
+
+    width:100%;
+
+    border-radius:22px;
+
+}
+
+.modal-badge{
+
+    display:inline-block;
+
+    background:#EFE6D4;
+
+    color:var(--color-primary);
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    margin-bottom:25px;
+
+}
+
+#modalTitle{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+#modalPrice{
+
+    color:var(--color-primary);
+
+    font-size:34px;
+
+    margin:20px 0;
+
+}
+
+.product-details{
+
+    padding-left:0;
+
+    margin-top:30px;
+
+}
+
+.product-details li{
+
+    margin-bottom:15px;
+
+}
+
+.quantity-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:35px 0;
+
+}
+
+.quantity-box button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+.btn-buy{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-buy:hover{
+
+    background:#1EBB59;
+
+    color:#fff;
+
+}
