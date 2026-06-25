@@ -1,0 +1,91 @@
+/*==========================================
+            VARIABLES GLOBALES
+==========================================*/
+
+:root{
+
+    /*====================
+        PALETA DE COLORES
+    ====================*/
+
+    --color-primary: #8A6A44;
+    --color-primary-dark: #6F5435;
+    --color-secondary: #B88B4A;
+
+    --color-background: #F8F4EC;
+    --color-background-light: #FCFAF6;
+
+    --color-white: #FFFFFF;
+
+    --color-text: #2F2F2F;
+    --color-text-light: #707070;
+
+    --color-border: #E8E2D6;
+
+    --color-success: #25D366;
+
+    /*====================
+            SOMBRAS
+    ====================*/
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+
+    --shadow-md: 0 12px 30px rgba(0,0,0,.10);
+
+    --shadow-lg: 0 25px 60px rgba(0,0,0,.16);
+
+    /*====================
+        BORDER RADIUS
+    ====================*/
+
+    --radius-sm: 12px;
+
+    --radius-md: 20px;
+
+    --radius-lg: 30px;
+
+    --radius-pill: 50px;
+
+    /*====================
+        TRANSICIONES
+    ====================*/
+
+    --transition-fast: .25s ease;
+
+    --transition: .35s ease;
+
+    --transition-slow: .55s ease;
+
+    /*====================
+            FUENTES
+    ====================*/
+
+    --font-main: "Roboto", sans-serif;
+
+    /*====================
+        TAMAÑOS
+    ====================*/
+
+    --fs-title-xl: 64px;
+
+    --fs-title-lg: 46px;
+
+    --fs-title-md: 34px;
+
+    --fs-title-sm: 26px;
+
+    --fs-body-lg: 20px;
+
+    --fs-body: 17px;
+
+    --fs-small: 15px;
+
+    /*====================
+        ESPACIADOS
+    ====================*/
+
+    --section-space: 120px;
+
+    --container-space: 80px;
+
+}
