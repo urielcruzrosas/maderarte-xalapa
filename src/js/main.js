@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
-        fetch('/src/components/header.html')
+        fetch('./src/components/header.html')
             .then(response => {
                 if (!response.ok) throw new Error('No se pudo cargar el header');
                 return response.text();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
-        fetch('/src/components/footer.html')
+        fetch('./src/components/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error('No se pudo cargar el footer');
                 return response.text();
