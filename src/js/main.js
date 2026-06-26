@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
-        fetch('./src/components/footer.html')
+        fetch('./maderarte-xalapa/src/components/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error('No se pudo cargar el footer');
                 return response.text();
