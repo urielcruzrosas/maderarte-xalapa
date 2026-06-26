@@ -1,0 +1,95 @@
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:992px){
+
+    .catalog-hero h1{
+
+        font-size:48px;
+
+    }
+
+    .section-title h2{
+
+        font-size:36px;
+
+    }
+
+    #modalTitle{
+
+        font-size:32px;
+
+    }
+
+    .modal-body{
+
+        padding:25px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    :root{
+
+        --section-space:80px;
+
+    }
+
+    .catalog-hero{
+
+        min-height:auto;
+
+        padding:120px 0;
+
+    }
+
+    .catalog-hero p{
+
+        font-size:18px;
+
+    }
+
+    .featured-card img,
+
+    .product-image img{
+
+        height:260px;
+
+    }
+
+    .cta-content h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .catalog-button,
+
+    .cta-button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .catalog-hero h1{
+
+        font-size:38px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+}
